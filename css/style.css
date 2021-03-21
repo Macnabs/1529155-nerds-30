@@ -26,23 +26,23 @@
 :root {
   --basic-black: #000000;
   --basic-dark: #283136;
-  --basic-grey: #EEEEEE;
-  --basic-lite-grey: #E1E1E1;
-  --basic-green: #00CA74;
-  --basic-red: #FB565A;
-  --basic-yellow: #EFC849;
+  --basic-grey: #eeeeee;
+  --basic-lite-grey: #e1e1e1;
+  --basic-green: #00ca74;
+  --basic-red: #fb565a;
+  --basic-yellow: #efc849;
   --basic-extra-light: #888888;
   --basic-white: #ffffff;
-  
-  --special-red:#E74246;
-  --special-extra-red: #D7373B;
-  --special-green: #00BC6C;
-  --special-extra-green: #00AA62;
-  --special-yellow: #EAB534;
-  --special-extra-yellow: #E5A722;
-  --special-grey: #DFDFDF;
-  --special-extra-grey: #D5D5D5;
-  --special-dark-grey: #4D4D4D;
+
+  --special-red: #e74246;
+  --special-extra-red: #d7373b;
+  --special-green: #00bc6c;
+  --special-extra-green: #00aa62;
+  --special-yellow: #eab534;
+  --special-extra-yellow: #e5a722;
+  --special-grey: #dfdfdf;
+  --special-extra-grey: #d5d5d5;
+  --special-dark-grey: #4d4d4d;
 }
 
 /*Body*/
@@ -106,23 +106,29 @@ a {
   padding: 0 10px;
 }
 
+.description {
+  margin-bottom: 40px;
+}
+
 .site-navigation {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.statistics img {
+  margin-bottom: 37px;
+}
+
 .page-catalog {
   display: grid;
   grid-template-columns: 180px 1fr;
   align-content: start;
-
 }
 
 .main-header-logo {
-  width: 200;
   margin-left: 100px;
-  margin-top: ;
+  margin-bottom: 300px;
 }
 
 .main-header-bar {
@@ -134,9 +140,12 @@ a {
   margin-bottom: 80px;
 }
 
+.inner-page .main-header {
+  margin-bottom: 0px;
+}
 
 .container {
-  width: 1300px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -147,9 +156,15 @@ a {
   margin-top: 100px;
 }
 
+.site-navigation {
+  display: flex;
+}
+
 .site-navigation a,
 .basket a {
   color: var(--basic-black);
+  display: block;
+  padding-right: 45px;
 }
 
 .site-navigation a:hover,
@@ -157,6 +172,10 @@ a {
 .basket a:hover,
 .basket a:focus {
   color: var(--basic-red);
+}
+
+.basket {
+  margin-bottom: 87px;
 }
 
 .logos-list {
@@ -177,13 +196,17 @@ a {
   line-height: 30px;
   width: 300px;
 }
- 
+
+.filter-result {
+  padding-left: 100px;
+}
+
 .button {
+  display: block;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700px;
   font: inherit;
-  text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-red);
   border: none;
@@ -224,13 +247,18 @@ a {
   align-content: start;
 }
 
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 55px;
+}
+
 .main-footer {
   margin-left: 300px;
   color: var(--basic-black);
-}
-
-.lala {
-  margin-left: 80px;
 }
 
 .social-list {
@@ -238,12 +266,12 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer-social{
+.footer-social {
   text-align: center;
 }
 
-.footer-social ul{
- list-style: none;
+.footer-social ul {
+  list-style: none;
 }
 
 .footer-call h2 {
@@ -254,7 +282,7 @@ a {
 
 .modal {
   color: var(--basic-black);
-  background-color: var(--basic-white)
+  background-color: var(--basic-white);
 }
 
 .logos-list {
@@ -306,7 +334,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
- 
+
 .headers-orders {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 20px;
@@ -318,7 +346,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
- 
+
 .page {
   height: 100%;
 }
@@ -341,7 +369,19 @@ a {
 
 .filter-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
-  color: var(--special-dark-grey)
+  color: var(--special-dark-grey);
+}
+
+.all-cards h2 {
+  display: none;
+}
+
+.inner-page h1 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 62px;
+  padding-bottom: 101px;
+  background-color: var(--basic-grey);
 }
 
 .catalog-list {
@@ -349,11 +389,14 @@ a {
 }
 
 .catalog-item {
-  box-shadow: 0 0 10px color: var(--basic-black)
+  width: 358px;
+  min-height: 578px;
+  margin-right: 42px;
+  margin-bottom: 72px;
 }
 
 .catalog-item a {
-  color: var(--basic-white)
+  color: var(--basic-white);
 }
 
 .catalog-item h3 {
@@ -373,7 +416,7 @@ a {
 .pagination-item a:hover,
 .pagination-item a:focus,
 .pagination-item a:active {
-  background-color: var(--special-grey)
+  background-color: var(--special-grey);
 }
 
 .pagination-item-current a,
@@ -381,6 +424,6 @@ a {
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
   background-color: var(--basic-white);
-  border: 3px solid #DBDBDB;
+  border: 3px solid #dbdbdb;
   border-radius: 3px;
 }
