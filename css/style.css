@@ -77,13 +77,12 @@ a {
   color: var(--basic-black);
 }
 
-.book {
+.services {
   margin-top: 100px;
 }
 
-.book-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.service-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -137,10 +136,6 @@ a {
 
 .main-header {
   background-color: var(--basic-grey);
-  margin-bottom: 80px;
-}
-
-.inner-page .main-header {
   margin-bottom: 0px;
 }
 
@@ -183,18 +178,70 @@ a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.book-list {
+.service-list {
   list-style: none;
 }
 
-.book-item {
-  text-align: center;
+.service-item {
+  margin-right: 100px;
 }
 
-.book-item {
+.service-item {
   font-size: 24px;
   line-height: 30px;
   width: 300px;
+}
+
+.button-red {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700px;
+  font: inherit;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border: none;
+  border-radius: 3px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  padding-top: 17px;
+}
+
+.button-green {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700px;
+  font: inherit;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  border: none;
+  border-radius: 3px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  padding-top: 17px;
+}
+
+.button-yellow {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700px;
+  font: inherit;
+  color: var(--basic-white);
+  background-color: var(--basic-yellow);
+  border: none;
+  border-radius: 3px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  padding-top: 17px;
+}
+
+.order-list {
+  list-style: none;
 }
 
 .filter-result {
@@ -213,6 +260,14 @@ a {
   border-radius: 3px;
   height: 50px;
   width: 250px;
+}
+
+.services h2 {
+  display: none;
+}
+
+.container h1 {
+  display: none;
 }
 
 .contacts-phone {
@@ -295,7 +350,8 @@ a {
   line-height: 30px;
 }
 
-.motto {
+.slogan {
+  padding-left: 370px;
   background-color: var(--basic-grey);
 }
 
