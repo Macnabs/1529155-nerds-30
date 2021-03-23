@@ -296,10 +296,19 @@ a {
   background-color: var(--basic-red);
 }
 
-.sort-list {
+.sort-types {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: start;
+}
+
+.sort-list li {
+  margin-right: 25px;
+}
+
+.sort-list {
+  display: flex;
+  list-style: none;
 }
 
 .catalog-list {
