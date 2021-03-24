@@ -89,7 +89,6 @@ a {
 }
 
 .main-navigation {
-  display: grid;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -137,6 +136,19 @@ a {
 .main-header {
   background-color: var(--basic-grey);
   margin-bottom: 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -287,6 +299,14 @@ a {
 }
 
 .social-button {
+  display: flex;
+  margin-right: 9px;
+  border-radius: 50%;
+  align-content: center;
+  justify-content: center;
+  display: block;
+  width: 81px;
+  height: 81px;
   color: inherit;
   background-color: var(--basic-lite-grey);
 }
@@ -294,6 +314,10 @@ a {
 .social-button:hover,
 .social-button:focus {
   background-color: var(--basic-red);
+}
+
+.social-list img {
+  padding-top: 30px;
 }
 
 .sort-types {
@@ -321,13 +345,15 @@ a {
 }
 
 .main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 68px;
   margin-left: 300px;
   color: var(--basic-black);
 }
 
 .social-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
 }
 
 .footer-social {
@@ -336,6 +362,10 @@ a {
 
 .footer-social ul {
   list-style: none;
+}
+
+.footer-call {
+  margin-left: -400px;
 }
 
 .footer-call h2 {
